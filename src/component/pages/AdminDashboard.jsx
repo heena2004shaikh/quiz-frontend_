@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import ApiService from '../../service/Apiservice';
+import ApiService from '../../service/ApiService';
 
 const AdminDashboard = () => {
   const [tests, setTests] = useState([]);
