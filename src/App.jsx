@@ -13,6 +13,7 @@ import StartTestPage from './component/pages/StartTestPage';
 import AdminResultsPage from './component/pages/AdminResultsPage';
 import MyAttemptsPage from './component/pages/MyAttemptsPage';
 import EditTestPage from './component/pages/EditTestPage';
+import HomePage from './component/pages/HomePage';
 
 
 const App = () => {
@@ -20,8 +21,11 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
+      <Route path="/" element={<HomePage />} />
+
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/create-test" element={<CreateTest />} />
         <Route path="/admin/add-question/:testId" element={<AddQuestionPage />} />
