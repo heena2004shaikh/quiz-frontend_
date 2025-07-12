@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
-import ApiService from '../../service/Apiservice';
+import ApiService from '../../service/ApiService';
 
 const SignupPage = () => {
   const [form, setForm] = useState({ name: '', email: '', password: '' });
