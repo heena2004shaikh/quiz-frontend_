@@ -3,7 +3,7 @@ import React from 'react'
 const HomePage = () => {
   return (
     <div>
-      <img src='../../../public/homepage_image.jpg'/>
+      <img src="/homepage_image.jpg" alt="Home"/>
     </div>
   )
 }
